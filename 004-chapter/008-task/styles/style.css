@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(118, 72, 136);
+}
+
+.rectangle {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    background: linear-gradient(90deg, rgba(185,118,154,1) 0%, rgba(9,17,121,1) 57%, rgba(0,212,255,1) 100%);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: -1px -1px 15px black;
+
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: aqua;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.circle:hover {
+    transition: all 0.5s ease-in-out;
+    
+    background-color: red;
+    box-shadow: 5px 5px 5px black;
+    cursor: pointer;
+}
+:focus-visible {
+    outline: -webkit-focus-ring-color auto 1px;
+}
