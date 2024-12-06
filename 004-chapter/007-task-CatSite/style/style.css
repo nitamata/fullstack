@@ -1,0 +1,22 @@
+body {
+    background-color: #000;
+    margin: 0px;
+    font-weight: bold;
+}
+
+.meme-container {
+    color: #fff;
+    border: 10px solid white;
+    margin: 30px;
+    padding: 20px;
+    text-align: center;
+    font-family: monospace;
+    background-color: rgba(128, 128, 128, 0.575);
+}
+
+img {
+    border: 3px solid white;
+    width: 320px;
+    height: 240px;
+    
+}
