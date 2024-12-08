@@ -1,0 +1,107 @@
+body {
+    /* Используется шрифт Montserrat для текста внутри body */
+    font-family: 'Montserrat', sans-serif;
+    /* Цвет фона страницы */
+    background: rgb(36,33,34);
+background: radial-gradient(circle, #0A0C15 0%, #0A0C15 55%, rgb(12, 46, 53) 100%);
+    color: #EFEFEF;
+}
+
+.header {
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.card {
+    /* Цвет фона карточки */
+    background-color: #282726;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+    height: auto;
+}
+
+.card h2 {
+    /* Внутренний отступ для заголовка h2 */
+    margin: 1px;
+    font-size: 15px;
+    opacity: 0.8;
+    font-weight: 100;
+}
+
+
+.price {
+    /* Размер шрифта цены */
+    font-size: 20px;
+    /* Жирное начертание для цены */
+    font-weight: 600;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+.card p {
+    /* Внешний отступ для абзаца */
+    margin: 5px 0;
+    font-size: 14px;
+    opacity: 0.8;
+    font-weight: 50;
+}
+
+.button {
+    /* Цвет фона кнопки */
+    background-color: #007AFF;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 5%;
+    padding: 5%;
+    transition: all 0.3s ease;
+    color: #EFEFEF;
+    text-decoration: none;
+}
+
+.button:hover {
+    /* Изменение цвета фона кнопки при наведении */
+    transition: all 0.3s ease;
+    box-shadow: 1px 1px 11px 3px rgba(0, 225, 255, 0.514);
+}
+
+
+
+li {
+    /* Внешний отступ элементов списка */
+    margin : 5% 0;
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    body {
+        /* Изменение направления отображения элементов при ширине экрана до 768px */
+        flex-direction: column;
+        /* Выравнивание элементов по центру при изменении направления */
+        align-items: center;
+    }
+    .card {
+        /* Изменение ширины карточки при изменении направления */
+        width: 100%;
+        margin: 3%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .card {
+        width: 100%;
+        margin: 3%;
+        height: auto;
+    }
+    
+}
+
